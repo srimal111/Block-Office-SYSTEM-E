@@ -234,7 +234,44 @@
         </script>
       </div>
 
+   
+      <div class="contact-card1">
+        <div class="contact-details">
+          <div class="contact-image-container">
+            <img class="contact-image2" src="one.jpg" alt="Profile Image" />
+          </div>
+          <div>
+            <div class="name">
+                Mr.A.G.D.N. Ranasingha   <br />
+              <span class="disgnation">Block Manager (Wilgamuwa) </span><br />
+              <p>
+                In.com : <span id="">None</span><br />
+                LandLine : <span id="bm3_land">066-2250051
 
+                </span><br />
+                Mobile : <span id="bm3_mobile">070-2107364
+
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-buttons">
+          <button class="call-button" onclick="callNumber('bm3_land')">
+            Call LandLine
+          </button>
+          <button class="call-button" onclick="callNumber('bm3_mobile')">
+            Call Mobile
+          </button>
+        </div>
+        <script>
+          function callNumber(number, isMobile = false) {
+            var prefix = isMobile ? "tel:" : "tel:";
+            window.location.href =
+              prefix + document.getElementById(number).textContent;
+          }
+        </script>
+      </div>
 
 
 
